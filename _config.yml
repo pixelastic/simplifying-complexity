@@ -4,8 +4,8 @@ format: web
 sidebar: docnav
 
 # Link to home
-url: http://idratherbewriting.com
-baseurl: /simplifying-complexity
+url: https://friendly-kowalevski-8d7c63.netlify.com/
+baseurl: .
 
 destination: _site
 port: 4000
@@ -24,8 +24,6 @@ kramdown:
 
 collections:
   docs:
-    output: true
-  search:
     output: true
 
 sass:
@@ -48,15 +46,6 @@ defaults:
       layout: default
       topnav: topnav
       progress: true
-      sidebar: docnav
-  -
-    scope:
-      path: ""
-      type: search
-    values:
-      layout: default
-      topnav: topnav
-      type: search
       sidebar: docnav
   -
     scope:
@@ -83,10 +72,12 @@ uistring:
     collapseall: Collapse All
     title: Doc navigation # Displays as site title on top nav bar and on site metadata
     description: A guide for technical writers on simplifying complexity in documentation # Displays as site description meta
-    search_placeholder_product: Search ...
     github_edit_button_text: Edit on GitHub
-    search_results_page_title: Search results
-    search_no_results_found: No results found.
     products: Products
     docindex_product: Product
     docindex_startpage: Starting page
+
+####### Algolia configuration ###########
+algolia:
+  application_id: MXM0JWJNIW
+  index_name: simplifyingcomplexity
